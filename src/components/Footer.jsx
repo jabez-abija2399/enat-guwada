@@ -90,7 +90,7 @@ export default function Footer() {
                         <ul className="space-y-3">
                             <li className="flex items-start gap-2.5 text-sm text-cream/60">
                                 <MapPin size={15} className="text-golden mt-0.5 shrink-0" />
-                                <span>56 5th Avenue NW<br />Minneapolis, MN 55411</span>
+                                <span>Kera Square<br />Addis Ababa, Ethiopia</span>
                             </li>
                             <li className="flex items-center gap-2.5 text-sm text-cream/60">
                                 <Phone size={15} className="text-golden shrink-0" />
