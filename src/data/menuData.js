@@ -1,0 +1,185 @@
+// ============================================================
+// Enat Guwada – Menu & Business Data
+// ============================================================
+
+export const menuCategories = [
+    {
+        id: 'stews',
+        name: 'Stews (Wat)',
+        amharic: 'ወጥ',
+        description: 'Slow-simmered stews served on a bed of freshly made injera — the heart of Ethiopian cooking.',
+        items: [
+            {
+                id: 'doro-wat',
+                name: 'Doro Wat',
+                amharic: 'ዶሮ ወጥ',
+                description: 'Ethiopia\'s national dish — tender chicken drumsticks slow-cooked in a rich berbere-spiced stew with traditional niter kibbeh and a whole boiled egg.',
+                price: 18,
+                tags: ['GF'],
+                featured: true,
+                emoji: '🍗',
+            },
+            {
+                id: 'misir-wat',
+                name: 'Misir Wat',
+                amharic: 'ምስር ወጥ',
+                description: 'Red lentils cooked down with berbere spice blend and fragrant niter kibbeh — a deeply satisfying vegan staple.',
+                price: 14,
+                tags: ['VE', 'GF'],
+                featured: true,
+                emoji: '🫘',
+            },
+            {
+                id: 'shiro',
+                name: 'Shiro',
+                amharic: 'ሽሮ',
+                description: 'Silky chickpea flour stew seasoned with garlic, onion, and Ethiopian spice blend. Comfort food at its finest.',
+                price: 13,
+                tags: ['VE', 'GF'],
+                emoji: '🫕',
+            },
+            {
+                id: 'key-wat',
+                name: 'Key Wat',
+                amharic: 'ቀይ ወጥ',
+                description: 'Slow-braised beef in our signature red berbere sauce with caramelised onions and clarified butter. Rich, bold, unforgettable.',
+                price: 20,
+                tags: ['GF'],
+                emoji: '🥩',
+            },
+        ],
+    },
+    {
+        id: 'tibs',
+        name: 'Grilled & Sauté (Tibs)',
+        amharic: 'ጥብስ',
+        description: 'Sizzling skillet dishes of seasoned meats and vegetables, served alongside injera.',
+        items: [
+            {
+                id: 'tibs-firfir',
+                name: 'Tibs Firfir',
+                amharic: 'ጥብስ ፍርፍር',
+                description: 'Sautéed seasoned beef pieces tossed with torn injera strips, jalapeños, tomatoes, and clarified butter — a beloved crowd favourite.',
+                price: 18,
+                tags: ['GF'],
+                featured: true,
+                emoji: '🥘',
+            },
+            {
+                id: 'lamb-tibs',
+                name: 'Lamb Tibs',
+                amharic: 'የበግ ጥብስ',
+                description: 'Cubes of tender lamb shoulder sautéed with rosemary, mitmita, onions, and green peppers in sizzling niter kibbeh.',
+                price: 20,
+                tags: ['GF'],
+                emoji: '🍖',
+            },
+            {
+                id: 'gomen-be-siga',
+                name: 'Gomen be Siga',
+                amharic: 'ጎመን በሥጋ',
+                description: 'Braised collard greens with slow-cooked beef, garlic, ginger, and onions. Simple, soulful, and satisfying.',
+                price: 17,
+                tags: ['GF'],
+                emoji: '🥬',
+            },
+        ],
+    },
+    {
+        id: 'veggie',
+        name: 'Vegetarian Platters',
+        amharic: 'የፍቅር ምግብ',
+        description: 'Ethiopian cuisine celebrates vegetables. Our communal platters are made for sharing.',
+        items: [
+            {
+                id: 'beyaynetu',
+                name: 'Beyaynetu',
+                amharic: 'ብያይነቱ',
+                description: 'The grand vegan platter — a colourful spread of Misir Wat, Shiro, Gomen, Ye\'abesha Gomen, and Azifa arranged on a large injera for communal sharing.',
+                price: 22,
+                tags: ['VE', 'GF'],
+                featured: true,
+                emoji: '🌿',
+            },
+            {
+                id: 'gomen',
+                name: 'Ye\'abesha Gomen',
+                amharic: 'የዐቢሸ ጎመን',
+                description: 'Ethiopian-style braised collard greens cooked low and slow with onions, garlic, ginger, jalapeços, and a splash of lemon.',
+                price: 12,
+                tags: ['VE', 'GF'],
+                emoji: '🫚',
+            },
+            {
+                id: 'azifa',
+                name: 'Azifa',
+                amharic: 'አዚፋ',
+                description: 'A refreshing cold lentil salad with mustard, jalapeño, lemon, and onion — served as a starter or side.',
+                price: 10,
+                tags: ['VE', 'GF'],
+                emoji: '🥗',
+            },
+        ],
+    },
+    {
+        id: 'beverages',
+        name: 'Beverages',
+        amharic: 'መጠጥ',
+        description: 'From the ancient Ethiopian coffee ceremony to house-brewed tej honey wine.',
+        items: [
+            {
+                id: 'coffee-ceremony',
+                name: 'Traditional Coffee Ceremony',
+                amharic: 'የቡና ሥርዓት',
+                description: 'Experience the full Ethiopian Jebena Buna ceremony — three rounds of freshly roasted, ground, and brewed coffee with frankincense and popcorn. Per guest.',
+                price: 8,
+                tags: ['V', 'GF'],
+                emoji: '☕',
+            },
+            {
+                id: 'tej',
+                name: 'Tej',
+                amharic: 'ጠጅ',
+                description: 'Ethiopia\'s ancient honey wine, brewed in-house with gesho leaves for a subtly bitter, naturally sweet taste. Served in a traditional berele glass.',
+                price: 7,
+                tags: ['V', 'GF'],
+                emoji: '🍯',
+            },
+            {
+                id: 'spiced-tea',
+                name: 'Ethiopian Spiced Tea',
+                amharic: 'የኢትዮጵያ ሻይ',
+                description: 'A warming blend of black tea with cinnamon, cardamom, cloves, and a hint of ginger. Served sweet.',
+                price: 4,
+                tags: ['V', 'GF'],
+                emoji: '🍵',
+            },
+            {
+                id: 'tamarind-juice',
+                name: 'Tamarind Lemonade',
+                amharic: 'የሎሚ ጭማቂ',
+                description: 'A refreshing house-made blend of tamarind pulp, fresh lemon, and a touch of honey chili. Non-alcoholic.',
+                price: 5,
+                tags: ['VE', 'GF'],
+                emoji: '🍹',
+            },
+        ],
+    },
+]
+
+export const featuredItems = menuCategories
+    .flatMap(c => c.items)
+    .filter(i => i.featured)
+
+export const businessInfo = {
+    name: 'Enat Guwada',
+    tagline: "Mother's Kitchen",
+    address: '56 5th Avenue NW, Minneapolis, MN 55411',
+    phone: '+1 (612) 555-9874',
+    email: 'hello@enatguwada.com',
+    hours: [
+        { day: 'Monday – Thursday', time: '11:00 – 22:00' },
+        { day: 'Friday – Saturday', time: '11:00 – 23:00' },
+        { day: 'Sunday', time: '12:00 – 21:00' },
+    ],
+}
