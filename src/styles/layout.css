@@ -1,0 +1,222 @@
+/* =============================================
+   LAYOUT UTILITIES
+   ============================================= */
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.section {
+    padding: var(--space-2xl) 0;
+}
+
+.section-sm {
+    padding: var(--space-xl) 0;
+}
+
+/* Grid utilities */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-md);
+}
+
+/* Flex utilities */
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Text alignment */
+.text-center {
+    text-align: center;
+}
+
+/* Page wrapper (with top padding for fixed nav) */
+.page-wrapper {
+    padding-top: var(--nav-height);
+    min-height: 100vh;
+}
+
+/* Divider */
+.divider {
+    width: 60px;
+    height: 3px;
+    background: var(--accent-golden);
+    margin: var(--space-sm) auto;
+    border-radius: 2px;
+}
+
+.divider-left {
+    margin: var(--space-sm) 0;
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    background: var(--accent-spice);
+    color: var(--white);
+    padding: 0.875rem 2rem;
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: background var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+    cursor: pointer;
+    border: 2px solid var(--accent-spice);
+}
+
+.btn-primary:hover {
+    background: #9b2f1e;
+    border-color: #9b2f1e;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+    display: inline-block;
+    background: transparent;
+    color: var(--white);
+    padding: 0.875rem 2rem;
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: background var(--transition-fast), transform var(--transition-fast);
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--white);
+    transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+    display: inline-block;
+    background: transparent;
+    color: var(--accent-spice);
+    padding: 0.875rem 2rem;
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: background var(--transition-fast), transform var(--transition-fast), color var(--transition-fast);
+    cursor: pointer;
+    border: 2px solid var(--accent-spice);
+}
+
+.btn-outline-dark:hover {
+    background: var(--accent-spice);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Section header style */
+.section-eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent-golden);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+    color: var(--text-coffee);
+    margin-bottom: var(--space-sm);
+}
+
+.section-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+/* Dietary tags */
+.tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-right: 4px;
+}
+
+.tag-v {
+    background: #D4EDDA;
+    color: #1A6B35;
+}
+
+.tag-ve {
+    background: #C3E6CB;
+    color: #155724;
+}
+
+.tag-gf {
+    background: #FFF3CD;
+    color: #856404;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: var(--space-xl) 0;
+    }
+
+    .section-sm {
+        padding: var(--space-lg) 0;
+    }
+}

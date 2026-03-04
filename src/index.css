@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 40% 98%;
+    --foreground: 15 30% 22%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-coffee font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading text-coffee;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-spice text-white px-7 py-3.5 rounded-lg font-body font-semibold text-sm tracking-wider uppercase transition-all duration-200 hover:bg-spice-dark hover:-translate-y-0.5 hover:shadow-warm-md active:translate-y-0 cursor-pointer border-2 border-spice hover:border-spice-dark;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 bg-transparent text-white px-7 py-3.5 rounded-lg font-body font-semibold text-sm tracking-wider uppercase transition-all duration-200 hover:bg-white/15 hover:-translate-y-0.5 cursor-pointer border-2 border-white/70 hover:border-white;
+  }
+
+  .btn-outline-dark {
+    @apply inline-flex items-center justify-center gap-2 bg-transparent text-spice px-7 py-3.5 rounded-lg font-body font-semibold text-sm tracking-wider uppercase transition-all duration-200 hover:bg-spice hover:text-white hover:-translate-y-0.5 cursor-pointer border-2 border-spice;
+  }
+
+  .section-eyebrow {
+    @apply font-body text-xs font-semibold tracking-[0.15em] uppercase text-golden block mb-2;
+  }
+
+  .section-title {
+    @apply font-heading text-section font-semibold text-coffee leading-tight;
+  }
+
+  .section-subtitle {
+    @apply text-coffee-light text-base leading-relaxed max-w-xl;
+  }
+
+  .tag {
+    @apply inline-block text-[0.65rem] font-bold tracking-wide px-2 py-0.5 rounded-full mr-1;
+  }
+
+  .tag-v {
+    @apply bg-green-100 text-green-800;
+  }
+
+  .tag-ve {
+    @apply bg-emerald-100 text-emerald-800;
+  }
+
+  .tag-gf {
+    @apply bg-amber-100 text-amber-800;
+  }
+
+  .divider-line {
+    @apply w-14 h-0.5 bg-golden rounded-full;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1.5 hover:shadow-warm-lg;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FDF8F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C6A75E;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B23A2B;
+}

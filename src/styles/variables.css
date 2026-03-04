@@ -1,0 +1,47 @@
+/* =============================================
+   CSS VARIABLES - DESIGN SYSTEM
+   ============================================= */
+:root {
+  /* Colors */
+  --bg-cream: #FDF8F5;
+  --bg-warm: #F5EDE3;
+  --text-coffee: #4B2E2B;
+  --text-muted: #7A5C57;
+  --accent-spice: #B23A2B;
+  --accent-golden: #C6A75E;
+  --accent-golden-light: #E8D5A3;
+  --border-warm: #E8D5C4;
+  --surface-card: #FFFAF7;
+  --white: #FFFFFF;
+
+  /* Typography */
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Source Sans 3', system-ui, sans-serif;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+
+  /* Layout */
+  --max-width: 1200px;
+  --nav-height: 72px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(75, 46, 43, 0.08);
+  --shadow-md: 0 4px 20px rgba(75, 46, 43, 0.12);
+  --shadow-lg: 0 8px 40px rgba(75, 46, 43, 0.16);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+
+  /* Border-radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+}
